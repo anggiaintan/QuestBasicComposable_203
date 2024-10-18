@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -60,6 +61,8 @@ fun BasicComposable(modifier: Modifier = Modifier) {
                 .size(250.dp))
         Text(text = "Nama: ",
             style = TextStyle(fontSize = 20.sp))
+        Text(text = "Anggia Intan Widyaningrum",
+            style = TextStyle(fontSize = 23.sp, fontStyle = FontStyle.Italic))
     }
 
 
