@@ -58,6 +58,8 @@ fun BasicComposable(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .padding(vertical = 50.dp)
                 .size(250.dp))
+        Text(text = "Nama: ",
+            style = TextStyle(fontSize = 20.sp))
     }
 
 
