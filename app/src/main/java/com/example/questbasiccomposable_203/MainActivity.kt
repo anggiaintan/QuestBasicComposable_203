@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestBasicComposable_203Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    BasicColumn(modifier = Modifier.padding(innerPadding)
+                    BasicComposable(modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
