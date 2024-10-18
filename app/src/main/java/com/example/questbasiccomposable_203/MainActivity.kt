@@ -45,6 +45,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.ExtraBold
             )
         )
+        Text(text = "Ini adalah halaman login")
     }
 
 
