@@ -45,45 +45,61 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BasicComposable(modifier: Modifier = Modifier) {
-    Column (horizontalAlignment = Alignment.CenterHorizontally,
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
         modifier = Modifier.fillMaxSize()
-        ){
-        Text(text = "Login",
-            style = TextStyle(fontSize = 50.sp,
+    ) {
+        Text(
+            text = "Login",
+            style = TextStyle(
+                fontSize = 50.sp,
                 fontWeight = FontWeight.ExtraBold
             )
         )
         Text(text = "Ini adalah halaman login")
-        Image(painter = painterResource(
-            id = R.drawable.umy
-        ),
+        Image(
+            painter = painterResource(
+                id = R.drawable.umy
+            ),
             contentDescription = null,
             modifier = Modifier
                 .padding(vertical = 50.dp)
-                .size(250.dp))
-        Text(text = "Nama: ",
-            style = TextStyle(fontSize = 20.sp))
-        Text(text = "Anggia Intan Widyaningrum",
-            style = TextStyle(fontSize = 23.sp, fontStyle = FontStyle.Italic, color = Color(red = 255, green = 0, blue = 0)))
-        Text(text = "20220140203",
+                .size(250.dp)
+        )
+        Text(
+            text = "Nama: ",
+            style = TextStyle(fontSize = 20.sp)
+        )
+        Text(
+            text = "Anggia Intan Widyaningrum",
+            style = TextStyle(
+                fontSize = 23.sp,
+                fontStyle = FontStyle.Italic,
+                color = Color(red = 255, green = 0, blue = 0)
+            )
+        )
+        Text(
+            text = "20220140203",
             style = TextStyle(fontSize = 35.sp, fontStyle = FontStyle.Italic)
         )
-        Image(painter = painterResource(
-            id = R.drawable.intan
-        ),
+        Image(
+            painter = painterResource(
+                id = R.drawable.intan
+            ),
             contentDescription = null,
             modifier = Modifier
                 .padding(vertical = 20.dp)
                 .size(350.dp)
-                .clip(CircleShape))
+                .clip(CircleShape)
+        )
     }
-
+}
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     QuestBasicComposable_203Theme {
-        Greeting("Android")
+        BasicComposable()
     }
 }
