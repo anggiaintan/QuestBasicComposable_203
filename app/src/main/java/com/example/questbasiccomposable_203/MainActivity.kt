@@ -64,6 +64,8 @@ fun BasicComposable(modifier: Modifier = Modifier) {
             style = TextStyle(fontSize = 20.sp))
         Text(text = "Anggia Intan Widyaningrum",
             style = TextStyle(fontSize = 23.sp, fontStyle = FontStyle.Italic, color = Color(red = 255, green = 0, blue = 0)))
+        Text(text = "20220140203",
+            style = TextStyle(fontSize = 35.sp, fontStyle = FontStyle.Italic))
     }
 
 
