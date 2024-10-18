@@ -15,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
@@ -62,7 +63,7 @@ fun BasicComposable(modifier: Modifier = Modifier) {
         Text(text = "Nama: ",
             style = TextStyle(fontSize = 20.sp))
         Text(text = "Anggia Intan Widyaningrum",
-            style = TextStyle(fontSize = 23.sp, fontStyle = FontStyle.Italic))
+            style = TextStyle(fontSize = 23.sp, fontStyle = FontStyle.Italic, color = Color(red = 255, green = 0, blue = 0)))
     }
 
 
